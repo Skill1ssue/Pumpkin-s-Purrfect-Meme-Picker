@@ -83,7 +83,15 @@ main {
   font-size: 35px;
 }
 
-.gif-container input {
+.gif-container .checkbox {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gif-container input[type="text"]{
   outline: none;
   border: none;
   text-align: center;
