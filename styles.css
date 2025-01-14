@@ -1,0 +1,133 @@
+/* Global Variables */
+:root {
+  --rich-black: #02111b;
+  --poppy-red: #DF2935;
+  --orange-web: #FFB238;
+  --nyanza-beige: #DDFFD9;
+  --light-white: #FCFCFC;
+  --title-font: "Agu Display";
+  --body-font: "Afacad Flux";
+}
+
+/* Global styles reset */
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body, button{
+  font-family: var(--body-font), sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  padding-inline: 10px;
+  align-items: center;
+  background-color: #02111b;
+}
+
+/* Header */
+header {
+  background-color: var(--poppy-red);
+  max-width: 400px;
+  width: 100%;
+  color: var(--light-white);
+  padding: 10px 10px 15px 10px;
+  border-radius: 40px 40px 0px 0px;
+}
+
+header h1 {
+  font-family: var(--title-font);
+  text-align: center;
+  font-size: 50px;
+}
+
+header p {
+  text-align: center;
+  font-size: 25px;
+}
+
+/* Main */
+main {
+  background-color: var(--nyanza-beige);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 10px;
+  gap: 20px;
+}
+
+.gif-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.gif-container img {
+  height: 250px;
+  border-radius: 20px;
+  max-width: 100%;
+}
+
+.gif-container h2 {
+  text-align: center;
+  color: var(--rich-black);
+  font-size: 40px;
+}
+
+.gif-container input {
+  outline: none;
+  border: none;
+  text-align: center;
+  background-color: var(--nyanza-beige);
+  font-family: var(--body-font);
+  font-size: 30px;
+  width: 300px;
+  padding: 5px;
+  border-bottom: 2px solid var(--orange-web);
+}
+
+.gif-container input::placeholder {
+  color: #8a8a8a;
+}
+
+.gif-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 25px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  background-color: var(--orange-web);
+  transition:all 0.3s ease-in-out;
+}
+
+.gif-container button:hover {
+  background-color: #fec974;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  max-width: 400px;
+  width: 100%;
+  background-color: var(--poppy-red);
+  color: var(--light-white);
+  text-align: center;
+  padding: 5px;
+  font-weight: 600;
+  border-radius: 0px 0px 40px 40px;
+}
