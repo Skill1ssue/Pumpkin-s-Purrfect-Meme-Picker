@@ -20,14 +20,14 @@ function GenGif() {
   fetch(url)
   .then((response) => response.json())
   .then(data => {
-    gifImage.setAttribute('src', data.data[0].images.fixed_height.url)
+    gifImage.setAttribute('src', data.data.images.fixed_height.url)
   })
 
 }
 
 function getUrl() {
   const searchTerm = getInputFormat()
-  const url = `https://api.giphy.com/v1/gifs/search?api_key=${GIPHY_API_KEY}&q=${searchTerm}&limit=1&offset=0&rating=g&lang=en&bundle=messaging_non_clips`
+  const url = `https://api.giphy.com/v1/gifs/random?api_key=${GIPHY_API_KEY}&tag=${searchTerm}&rating=g`
   return url
 }
 

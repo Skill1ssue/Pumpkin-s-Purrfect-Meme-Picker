@@ -34,7 +34,7 @@ body {
 /* Header */
 header {
   background-color: var(--poppy-red);
-  max-width: 400px;
+  max-width: 375px;
   width: 100%;
   color: var(--light-white);
   padding: 10px 10px 15px 10px;
@@ -44,43 +44,43 @@ header {
 header h1 {
   font-family: var(--title-font);
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 header p {
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 /* Main */
 main {
   background-color: var(--nyanza-beige);
-  max-width: 400px;
+  max-width: 375px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 10px;
+  padding: 40px 10px;
   gap: 20px;
 }
 
 .gif-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
 }
 
 .gif-container img {
   height: 250px;
   border-radius: 20px;
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .gif-container h2 {
   text-align: center;
   color: var(--rich-black);
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .gif-container input {
@@ -89,8 +89,8 @@ main {
   text-align: center;
   background-color: var(--nyanza-beige);
   font-family: var(--body-font);
-  font-size: 30px;
-  width: 300px;
+  font-size: 25px;
+  width: 250px;
   padding: 5px;
   border-bottom: 2px solid var(--orange-web);
 }
@@ -106,7 +106,7 @@ main {
   gap: 10px;
   padding: 10px 20px;
   margin-top: 20px;
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 10px;
   font-weight: 700;
   text-transform: uppercase;
@@ -122,7 +122,7 @@ main {
 
 /* Footer */
 footer {
-  max-width: 400px;
+  max-width: 375px;
   width: 100%;
   background-color: var(--poppy-red);
   color: var(--light-white);
